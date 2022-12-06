@@ -2,7 +2,7 @@ mod days;
 
 use clap::Parser;
 
-use days::{day1, day2, day3, day4};
+use days::{day1, day2, day3, day4, day5};
 
 #[derive(Parser)]
 #[command(
@@ -22,6 +22,7 @@ fn main() {
             2 => day2::run,
             3 => day3::run,
             4 => day4::run,
+            5 => day5::run,
             _ => {
                 eprintln!("Incorrect day value `{}`. Skipping", day);
                 continue;
